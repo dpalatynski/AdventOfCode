@@ -53,3 +53,11 @@ assert day1(sample_input_2, 2) == 281
 my_input = open(r"2023/inputs/Day_1.txt").read()
 print(day1(my_input))
 print(day1(my_input, 2))
+
+# One line
+import re
+
+assert sum([int(re.search(r'\d', line)[0]+re.search(r'\d', line[::-1])[0]) for line in sample_input.split('\n')]) == 142
+assert sum([int(re.search(r'\d', line)[0]+re.search(r'\d', line[::-1])[0]) for line in my_input.split('\n')]) == 54597
+assert sum([int(re.search(r'\d', line.replace('one', 'o1e').replace('two', 't2o').replace('three', 't3e').replace('four', 'f4r').replace('five', 'f5e').replace('six', 's6x').replace('seven', 's7n').replace('eight', 'e8t').replace('nine', 'n9e'))[0]+re.search(r'\d', line.replace('one', 'o1e').replace('two', 't2o').replace('three', 't3e').replace('four', 'f4r').replace('five', 'f5e').replace('six', 's6x').replace('seven', 's7n').replace('eight', 'e8t').replace('nine', 'n9e')[::-1])[0]) for line in sample_input_2.split('\n')]) == 281
+assert sum([int(re.search(r'\d', line.replace('one', 'o1e').replace('two', 't2o').replace('three', 't3e').replace('four', 'f4r').replace('five', 'f5e').replace('six', 's6x').replace('seven', 's7n').replace('eight', 'e8t').replace('nine', 'n9e'))[0]+re.search(r'\d', line.replace('one', 'o1e').replace('two', 't2o').replace('three', 't3e').replace('four', 'f4r').replace('five', 'f5e').replace('six', 's6x').replace('seven', 's7n').replace('eight', 'e8t').replace('nine', 'n9e')[::-1])[0]) for line in my_input.split('\n')]) == 54504

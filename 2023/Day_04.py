@@ -35,5 +35,5 @@ assert day4(sample_input) == (13, 30)
 
 
 # Results
-my_input = open(r"2023/inputs/Day_4.txt").read()
+my_input = open(r"2023/inputs/Day_04.txt").read()
 print(day4(my_input))

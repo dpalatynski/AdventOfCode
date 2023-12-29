@@ -50,7 +50,7 @@ assert day1(sample_input_2, 2) == 281
 
 
 # Results
-my_input = open(r"2023/inputs/Day_1.txt").read()
+my_input = open(r"2023/inputs/Day_01.txt").read()
 print(day1(my_input))
 print(day1(my_input, 2))
 

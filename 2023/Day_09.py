@@ -38,7 +38,7 @@ assert day9(sample_input, reverse=True) == 2
 
 
 # Results
-my_input = open(r"2023/inputs/Day_9.txt").read()
+my_input = open(r"2023/inputs/Day_09.txt").read()
 print(day9(my_input))
 print(day9(my_input, reverse=True))
    

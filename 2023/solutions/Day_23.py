@@ -165,4 +165,4 @@ if __name__ == "__main__":
     # Create gif
     gifs = True
     if gifs:
-        create_gif(sample_input, '2023/images/sample_input_animation.gif', 1)
+        create_gif(sample_input, '2023/images/Day_23_animation.gif', 1)
